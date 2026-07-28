@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <a class="brand">
+          <span>
+            <strong>Turf's Keikaku Mods</strong>
+          </span>
+        </a>
+
+        <nav class="side-nav">
+          <div class="side-nav__group">
+            <a class="nav-item" href="#overview" data-page-link="overview">
+              Overview
+            </a>
+          </div>
+
+          <div class="side-nav__group">
+            <p class="side-nav__label">Mods</p>
+            <a
+              class="nav-item nav-item--mod"
+              href="#keikaku-paint"
+              data-page-link="keikaku-paint"
+            >
+            <span></span>
+              Keikaku Paint
+            </a>
+          </div>
+        </nav>
+
+        <p class="sidebar__note">
+          Unofficial community mods for Keikaku.
+        </p>
+      </aside>
+
+      <main class="content" id="page-content">
+        <section
+          class="page"
+          id="overview"
+          data-page="overview"
+        >
+          <header class="page-header">
+            <p class="page-intro">
+                Welcome to mods I make in my free time :)
+            </p>
+          </header>
+
+          <p class="eyebrow">Mods</p>
+          <div class="overview-grid">
+            <article class="summary-card">
+              <div class="card-heading">
+                <p class="card-label">Coming soon</p>
+              </div>
+              <h2>Keikaku Paint</h2>
+              <p>
+                Change the colour of your RX7.
+              </p>
+              <a class="text-link" href="#keikaku-paint">
+                View Keikaku Paint
+                <span>→</span>
+              </a>
+            </article>
+          </div>
+
+            <header class="page-header">
+                <p class="eyebrow">Installation</p>
+                <h1 id="installation-title">How to install mods</h1>
+            </header>
+          <section class="guide-card">
+            <p class="eyebrow">BepInEx</p>
+            <h2>You need BepInEx</h2>
+            <p>All mods will be loaded with BepInEx. Its simple to use, and makes installing mods simple.
+                You only have to do this step once, and then you can install any mods that use BepInEx.
+            </p>
+            <ol class="steps">
+              <li>
+                <span class="step-number">1</span>
+                <div>
+                  <strong>Download BepInEx</strong>
+                  <p>
+                    Download <a href="https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip">BepInEx for Windows x64</a>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">2</span>
+                <div>
+                  <strong>Open your Keikaku folder</strong>
+                  <p>
+                    In Steam, right-click Keikaku and choose Manage, then Browse local files.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">3</span>
+                <div>
+                  <strong>Extract BepInEx</strong>
+                  <p>
+                    Drag and drop the contents of the BepInEx ZIP into the folder containing <code>Keikaku Demo.exe</code>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">4</span>
+                <div>
+                  <strong>Start the game once</strong>
+                  <p>
+                    Open the game and close it again after reaching the main menu. BepInEx is now ready for mods.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="guide-card">
+            <p class="eyebrow">Mods</p>
+            <h2>Installing individual mods</h2>
+            <p>With BepInEx installed, this step is literally drag and drop.</p>
+            <ol class="steps">
+              <li>
+                <span class="step-number">1</span>
+                <div>
+                  <strong>Download the release ZIP</strong>
+                  <p>Choose the ZIP download on the mod’s page.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">2</span>
+                <div>
+                  <strong>Extract it into the game folder</strong>
+                  <p>
+                    Drag and drop the content of the ZIP folder into where <code>BepInEx</code> is installed in your Keikaku folder.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">3</span>
+                <div>
+                  <strong>Start the game</strong>
+                  <p>The mod will load automatically through BepInEx. Instruction on how to use the mod in game are on each mods dedicated page.</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+        </section>
+
+        <section
+          class="page"
+          id="keikaku-paint"
+          data-page="keikaku-paint"
+        >
+          <header class="page-header page-header--mod">
+            <div>
+              <p class="eyebrow">Mod</p>
+              <h1 id="paint-title">Keikaku Paint</h1>
+            </div>
+          </header>
+
+          <p class="page-intro">
+            Preview and save independent exterior-panel colours and surface
+            finishes from inside Keikaku Demo.
+          </p>
+
+          <section class="download-card">
+            <div>
+              <p class="card-label">Download</p>
+              <h2 id="paint-download">Coming soon, still in progress</h2>
+              <p>
+                The mod is still in development, the ZIP will be downloaded from here when available.
+              </p>
+            </div>
+
+            <div class="download-actions">
+              <button type="button" class="button button--primary" disabled>
+                Download ZIP
+              </button>
+            </div>
+          </section>
+
+          <section class="mod-section">
+            <h2 id="paint-features">What this mod does</h2>
+            <ul class="feature-list">
+              <li>
+                <strong>Paint individual panels</strong>
+                <span>
+                  Paint the whole car or individual panels.
+                </span>
+              </li>
+              <li>
+                <strong>Preview changes live</strong>
+                <span>
+                  See colour changes as you change colours in the picker.
+                </span>
+              </li>
+              <li>
+                <strong>Choose a finish</strong>
+                <span>Solid paint and carbon fibre are the only supported finishes right now.</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="mod-section mod-section--compact">
+            <h2 id="paint-use">How to use this mod</h2>
+            <p>
+              Start the game and press <kbd>F8</kbd>. Choose a panel, adjust its
+              colour or finish, then save when you are happy.
+            </p>
+          </section>
+        </section>
+
+        <noscript>
+          <p class="noscript-note">
+            JavaScript is disabled, so all pages are shown one after another.
+          </p>
+        </noscript>
+      </main>
+    </div>
+  </body>
+</html>
