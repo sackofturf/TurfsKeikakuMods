@@ -198,6 +198,16 @@ h2 {
   color: var(--muted);
 }
 
+.mod-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+}
+
 .mod-section ul {
     text-indent: 2rem;
 }
