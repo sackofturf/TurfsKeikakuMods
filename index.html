@@ -23,6 +23,18 @@
           </div>
 
           <div class="side-nav__group">
+            <p class="side-nav__label">Tools</p>
+            <a
+              class="nav-item nav-item--mod"
+              href="#keikaku-mod-manager"
+              data-page-link="keikaku-mod-manager"
+            >
+              <span></span>
+              Keikaku Mod Manager
+            </a>
+          </div>
+
+          <div class="side-nav__group">
             <p class="side-nav__label">Mods</p>
             <a
               class="nav-item nav-item--mod"
@@ -52,8 +64,18 @@
             </p>
           </header>
 
-          <p class="eyebrow">Mods</p>
+          <p class="eyebrow">Tools &amp; Mods</p>
           <div class="overview-grid">
+            <article class="summary-card">
+              <h2>Keikaku Mod Manager</h2>
+              <p>
+                A simple mod manager for Keikaku Demo.
+              </p>
+              <a class="text-link" href="#keikaku-mod-manager">
+                View Keikaku Mod Manager
+                <span>→</span>
+              </a>
+            </article>
             <article class="summary-card">
               <h2>Keikaku Paint</h2>
               <p>
@@ -71,18 +93,83 @@
                 <h1 id="installation-title">How to install mods</h1>
             </header>
           <section class="guide-card">
-            <p class="eyebrow">BepInEx</p>
-            <h2>You need BepInEx</h2>
-            <p>All mods will be loaded with BepInEx. Its simple to use, and makes installing mods simple.
-                You only have to do this step once, and then you can install any mods that use BepInEx.
+            <p class="eyebrow">Recommended</p>
+            <h2>Install with Keikaku Mod Manager</h2>
+            <p>
+              The Mod Manager installs the supported BepInEx 6 build and makes it easy to manage your mods.
             </p>
             <ol class="steps">
               <li>
                 <span class="step-number">1</span>
                 <div>
-                  <strong>Download BepInEx</strong>
+                  <strong>Download and extract the Mod Manager</strong>
                   <p>
-                    Download <a href="https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip">BepInEx for Windows x64</a>.
+                    Download the
+                    <a href="https://github.com/sackofturf/TurfsKeikakuMods/releases/download/TurfsKeikakuModManager-v1.0.0/TurfsKeikakuModManager-v1.0.0-win-x64.zip">Mod Manager ZIP</a>
+                    and extract all of its files into a folder.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">2</span>
+                <div>
+                  <strong>Run the Mod Manager</strong>
+                  <p>
+                    Open <code>TurfsKeikakuModManager.exe</code>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">3</span>
+                <div>
+                  <strong>Confirm your Keikaku folder</strong>
+                  <p>
+                    If the game was not found automatically, choose the folder containing
+                    <code>Keikaku Demo.exe</code>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">4</span>
+                <div>
+                  <strong>Install BepInEx 6</strong>
+                  <p>
+                    Click <strong>Install / Repair BepInEx</strong> if the Mod Manager says it is required.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">5</span>
+                <div>
+                  <strong>Add a mod</strong>
+                  <p>
+                    Drag a Keikaku mod ZIP onto the window, or click <strong>Browse for a ZIP</strong>.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <header class="page-header">
+            <p class="eyebrow">Manual installation</p>
+            <h2>Install without the Mod Manager</h2>
+          </header>
+
+          <section class="guide-card">
+            <p class="eyebrow">BepInEx 6</p>
+            <h2>Install BepInEx 6</h2>
+            <p>
+              All mods are loaded with BepInEx 6. You only need to install it once, then you can
+              manually install any compatible mod.
+            </p>
+            <ol class="steps">
+              <li>
+                <span class="step-number">1</span>
+                <div>
+                  <strong>Download BepInEx 6</strong>
+                  <p>
+                    Download the supported
+                    <a href="https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.Mono-win-x64-6.0.0-be.785%2B6abdba4.zip">BepInEx 6 Unity Mono build for Windows x64</a>.
                   </p>
                 </div>
               </li>
@@ -100,7 +187,8 @@
                 <div>
                   <strong>Extract BepInEx</strong>
                   <p>
-                    Drag and drop the contents of the BepInEx ZIP into the folder containing <code>Keikaku Demo.exe</code>.
+                    Drag and drop the contents of the BepInEx ZIP into the folder containing
+                    <code>Keikaku Demo.exe</code>.
                   </p>
                 </div>
               </li>
@@ -115,6 +203,7 @@
               </li>
             </ol>
           </section>
+
           <section class="guide-card">
             <p class="eyebrow">Mods</p>
             <h2>Installing individual mods</h2>
@@ -223,6 +312,77 @@
               Start the game and press <kbd>F8</kbd>. Choose a panel, adjust its
               colour or finish, then save when you are happy.
             </p>
+          </section>
+        </section>
+
+        <section
+          class="page"
+          id="keikaku-mod-manager"
+          data-page="keikaku-mod-manager"
+        >
+          <header class="page-header page-header--mod">
+            <div>
+              <p class="eyebrow">Tool</p>
+              <h1 id="mod-manager-title">Keikaku Mod Manager</h1>
+            </div>
+          </header>
+          <p class="page-intro">
+            A simple mod manager for Keikaku Demo.
+            It allows you to easily drag and drop mod ZIPs to install them, and manage which mods are enabled or disabled.
+            It also allows you to easily install BepInEx 6, or fix your broken install!
+          </p>
+
+          <img
+            class="mod-preview"
+            src="images/modManagerShowcase.png"
+          >
+
+          <section class="download-card">
+            <div>
+              <h2 id="mod-manager-download">Download v1.0.0</h2>
+              <p>
+                Download the latest release of Turf's Keikaku Mod Manager here!
+              </p>
+              <a href="#overview">Install instructions here</a>
+            </div>
+
+            <div class="download-actions">
+              <a type="button" class="button button--primary"
+                                    href="https://github.com/sackofturf/TurfsKeikakuMods/releases/download/TurfsKeikakuModManager-v1.0.0/TurfsKeikakuModManager-v1.0.0-win-x64.zip"
+              >
+                Download ZIP
+            </a>
+            </div>
+          </section>
+
+          <section class="mod-section">
+            <h2 id="mod-manager-features">What this tool does</h2>
+            <ul class="feature-list">
+              <li>
+                <strong>Install BepInEx 6</strong>
+                <span>
+                  Easily install BepInEx 6, or fix your broken install!
+                </span>
+              </li>
+              <li>
+                <strong>Install and manage mods</strong>
+                <span>
+                  Easily drag and drop mod ZIPs to install them, and manage which mods are enabled or disabled.
+                </span>
+              </li>
+              <li>
+                <strong>Delete installed mods</strong>
+                <span>
+                  Easily remove installed mods from your game.
+                </span>
+              </li>
+              <li>
+                <strong>New manager version detection</strong>
+                <span>
+                  The manager will check once a day for new versions of itself, and notify you if there is a new version available.
+                </span>
+              </li>
+            </ul>
           </section>
         </section>
 

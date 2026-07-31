@@ -1,5 +1,6 @@
 const pages = {
   overview: "Overview",
+  "keikaku-mod-manager": "Keikaku Mod Manager",
   "keikaku-paint": "Keikaku Paint",
 };
 
