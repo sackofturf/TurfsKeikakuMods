@@ -208,12 +208,8 @@ h2 {
   border-radius: 0.8rem;
 }
 
-.mod-section ul {
-    text-indent: 2rem;
-}
-
 .mod-section p {
-    text-indent: 2rem;
+    margin-left: 2rem;
 }
 
 .mod-section--compact {
@@ -355,7 +351,7 @@ kbd {
 .feature-list {
   display: grid;
   gap: 0;
-  margin: 0;
+  margin: 0 0 0 2rem;
   padding: 0;
   list-style: none;
 }

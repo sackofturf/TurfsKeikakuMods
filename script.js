@@ -2,6 +2,7 @@ const pages = {
   overview: "Overview",
   "keikaku-mod-manager": "Keikaku Mod Manager",
   "keikaku-paint": "Keikaku Paint",
+  "keikaku-sleepy-eyes": "Sleepy Eyes",
 };
 
 function selectPage() {
